@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width" />
+      <meta name="format-detection" content="telephone=no" />
+      <link rel="stylesheet" type="text/css" href="estilo.css" />
+      <title>Demo de menú lateral</title>
+   </head>
+   <body>
+      <div id="wrapper">
+         <div id="menu">
+            <h4>Menú</h4>
+            <ul>
+               <li onclick="menusel(1)">Opcion 1</li>
+               <li onclick="menusel(2)">Opcion 2</li>
+               <li onclick="menusel(3)">Opcion 3</li>
+            </ul>
+         </div>
+         <div id="content" class="">
+            <div id="menutop">
+               <img src="menu.png" width="40" onclick="elmenu();" />
+               Mi aplicación
+            </div>
+            <div class="container">
+               Contenido
+               <div id="estado">:)</div>
+               <blockquote>
+                  este gatito es don Ardilla.
+               </blockquote>
+               <p align="center">
+               <img src="http://www.elsiglodetorreon.com.mx/files/foro/2015/05/555f53593ffdf.jpg" style="max-width:80%" />
+               </p>
+            </div><!-- ./container -->
+         </div><!-- ./content -->
+         <!-- se sobrepone -->
+         <div class="lopen"></div>
+      </div>
+      <!-- utilizo zepto.js pero puede ser jquery -->
+      <script type="text/javascript" src="zepto.min.js"></script>
+      <!-- fastclick() ayuda para quitar el retraso del "tap/click" pero no es obligatorio -->
+      <script type="text/javascript" src="fastclick.js"></script>
+      <script type="text/javascript" src="elmenu.js"></script>
+   </body>
+</html>
